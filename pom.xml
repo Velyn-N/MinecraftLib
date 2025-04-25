@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.github.velyn-n</groupId>
+  <groupId>com.github.Velyn-N</groupId>
   <artifactId>minecraftlib</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>${revision}</version>
   <packaging>pom</packaging>
 
   <name>Velyn's MinecraftLib</name>
@@ -14,6 +14,7 @@
   <url>https://github.com/Velyn-N/MinecraftLib</url>
 
   <properties>
+    <revision>v0.0.1-SNAPSHOT</revision>
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -41,17 +42,6 @@
 
   <dependencyManagement>
     <dependencies>
-      <dependency>
-        <groupId>me.velyn</groupId>
-        <artifactId>minecraftlib.core</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>me.velyn</groupId>
-        <artifactId>minecraftlib.database</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-
       <dependency>
         <groupId>io.papermc.paper</groupId>
         <artifactId>paper-api</artifactId>
